@@ -107,9 +107,9 @@ module.exports = {
       { 
         new: true,
       }).then(() => {
-        res.json({ message: 'reaction deleted!' })
+        res.json({ message: 'reaction deleted!' });
       }).catch((err) => {
-        res.status(500).json(err)
+        res.status(500).json(err);
       });
   }
 };
