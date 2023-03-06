@@ -25,7 +25,7 @@ const reactionSchema = new Schema(
       getters: true,
     },
     id: false,
-  }
+  },
 );
 
 const thoughtSchema = new Schema(
@@ -34,7 +34,7 @@ const thoughtSchema = new Schema(
       type: String,
       required: true,
       min_length: 1,
-      max_length: 280
+      max_length: 280,
     },
     createdAt: {
       type: Date,
@@ -50,6 +50,7 @@ const thoughtSchema = new Schema(
     toJSON: {
       getters: true,
     },
+    id: false,
   }
 );
 
